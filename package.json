@@ -1,0 +1,59 @@
+{
+  "name": "port-pid-watcher",
+  "displayName": "Port PID Watcher",
+  "description": "VS Code extension to monitor a port and restart the debugger when PID changes.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TandyN/port-watcher"
+  },
+  "publisher": "TandyN",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "portPIDWatcher.start",
+        "title": "Port PID Watcher: Start Monitoring"
+      },
+      {
+        "command": "portPIDWatcher.stop",
+        "title": "Port PID Watcher: Stop Monitoring"
+      }
+    ],
+    "configuration": {
+      "title": "Port PID Watcher",
+      "properties": {
+        "portPIDWatcher.port": {
+          "type": "string",
+          "default": "9091",
+          "description": "Port number to monitor for changes"
+        },
+        "portPIDWatcher.launchConfig": {
+          "type": "string",
+          "default": "Python Azure Function Port PID Watcher",
+          "description": "Name of the launch configuration to run on PID change"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/extension.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.75.0",
+    "typescript": "^4.9.0",
+    "vscode-test": "^1.6.0"
+  }
+}
