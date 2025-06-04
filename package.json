@@ -2,7 +2,7 @@
   "name": "port-pid-watcher",
   "displayName": "Port PID Watcher",
   "description": "VS Code extension to monitor a port and restart the debugger when PID changes.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/TandyN/port-pid-watcher"
