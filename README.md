@@ -12,6 +12,12 @@ Useful for hot-reloading environments (e.g., Python, Node.js) where the process 
 - Custom Output Panel (`Port PID Watcher`) for live logs and diagnostics.
 - Manual start/stop commands from the Command Palette.
 
+## Installation
+
+Extension is published as `Port PID Watcher` in Visual Studio Marketplace.
+
+You can also compile the package yourself using `vsce package`, then installing it locally using the `.vsix` file that gets generated
+
 ## ⚙️ Configuration
 
 Open VS Code Settings and search for `Port PID Watcher`. You can configure:
