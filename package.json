@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TandyN/port-watcher"
+    "url": "https://github.com/TandyN/port-pid-watcher"
   },
   "publisher": "TandyN",
   "engines": {
